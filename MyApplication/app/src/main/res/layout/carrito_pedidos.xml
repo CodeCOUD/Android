@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_fondo"
+    tools:context=".Carrito_Pedidos">
+
+    <!-- New TextView for total cost -->
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Carrito de Pedidos"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconoCarrito"
+        android:layout_width="194dp"
+        android:layout_height="84dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/carrito"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+
+    <TextView
+        android:id="@+id/textViewTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Total: $0.00"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconoCarrito" />
+
+    <TextView
+        android:id="@+id/btnCompletarPedido"
+        android:layout_width="350sp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boton"
+        android:gravity="center"
+        android:text="Completar Pedido"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewCarrito" />
+
+    <TextView
+        android:id="@+id/btnCancelarPedido"
+        android:layout_width="350sp"
+        android:layout_height="40dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/boton"
+        android:gravity="center"
+        android:onClick="CancelarPedido"
+        android:text="Cancelar Pedido"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnCompletarPedido"
+        app:layout_constraintStart_toStartOf="@+id/btnCompletarPedido"
+        app:layout_constraintTop_toBottomOf="@+id/btnCompletarPedido" />
+
+    <ListView
+        android:id="@+id/listViewCarrito"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

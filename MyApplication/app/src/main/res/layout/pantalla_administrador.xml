@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_fondo"
+    tools:context=".Pantalla_Administrador">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="171dp"
+        android:text="Administrador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/btnPlatos"
+        android:textSize="25dp"
+        android:layout_width="350dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/boton"
+        android:gravity="center"
+        android:onClick="MetodoAgregarPlatos"
+        android:text="Platos"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/btnBebidas"
+        android:textSize="25dp"
+        android:layout_width="350dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/boton"
+        android:gravity="center"
+        android:onClick="MetodoAgregarBebidas"
+        android:text="Bebidas"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlatos" />
+
+    <TextView
+        android:id="@+id/btnVisualizarPedidos"
+        android:textSize="25dp"
+        android:layout_width="350dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/boton"
+        android:gravity="center"
+        android:onClick="MetodoMostrarPedidos"
+        android:text="Visualizar Pedidos"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBebidas" />
+</androidx.constraintlayout.widget.ConstraintLayout>
